@@ -15,10 +15,8 @@
 int	ft_hexlen(long long nb)
 {
 	int		len;
-	char	*hex;
 
 	len = 0;
-	hex = "0123456789abcdef";
 	if (nb == 0)
 		return (1);
 	if (nb < 0)
