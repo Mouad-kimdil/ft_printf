@@ -1,4 +1,4 @@
-# ft_printf - 42 Project By ![Your Name](https://img.shields.io/badge/Mouad-kimdil-blue)
+# ft_printf - 42 Project By ![Mouad Kimdil](https://img.shields.io/badge/Mouad-Kimdil-blue)
 
 ![School: 42](https://img.shields.io/badge/School-1337-blue)
 
@@ -17,7 +17,7 @@ Welcome to the "ft_printf" project, part of the 42 School cursus. This project i
 
 ## Usage
 
-To use the ft_printf function, follow these steps:
+To use the `ft_printf` function, follow these steps:
 
 1. Clone the repository: `git clone <repository_url>`
 2. Include the "ft_printf.h" header in your C file: `#include "ft_printf.h"`
@@ -35,39 +35,24 @@ To use the ft_printf function, follow these steps:
 - `%%`: Percent sign
 
 ## Function Descriptions
-`int ft_printf(const char *format, ...)`
-Description: This is the main function implementing a custom version of the printf function. It takes a format string containing format specifiers and a variable number of arguments corresponding to these specifiers. The function processes the format string, interprets the specifiers, and prints formatted output.
-
-Parameters:
-
-format: A format string containing format specifiers.
-...: Variable number of arguments corresponding to the format specifiers.
-Return Value:
-
-Returns the total number of characters printed (excluding the null-terminating byte used to end output to strings). If an error occurs, it returns -1.
-static int ft_percent(va_list ap, const char s, int len)
-Description: This static function handles a specific format specifier and updates the total length. It is called by the ft_printf function for each encountered format specifier.
-
-
 
 ### `int ft_printf(const char *format, ...)`
 
-- Description: Custom implementation of the printf function.
-- Parameters:
+- **Description:** Custom implementation of the printf function.
+- **Parameters:**
   - `format`: A format string containing format specifiers.
   - `...`: Variable number of arguments corresponding to the format specifiers.
+- **Return Value:** Returns the total number of characters printed (excluding the null-terminating byte used to end output to strings). If an error occurs, it returns -1.
 
 ### `static int ft_percent(va_list ap, const char s, int len)`
 
-- Description: Handle a specific format specifier and update the total length.
-- Parameters:
+- **Description:** Handles a specific format specifier and updates the total length. It is called by the `ft_printf` function for each encountered format specifier.
+- **Parameters:**
   - `ap`: A va_list of arguments.
   - `s`: The format specifier character.
   - `len`: The current total length.
-  - Return Value:
-Returns the updated total length after processing the format specifier. If an error occurs, it returns -1.
+- **Return Value:** Returns the updated total length after processing the format specifier. If an error occurs, it returns -1.
 
 ## Contributing
 
 Feel free to contribute to the project by opening issues or submitting pull requests. Your contributions are highly appreciated.
-
